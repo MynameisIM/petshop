@@ -1,20 +1,15 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-    max-width: 970px !important;
-    margin: 0 auto !important;
-}
 
 header h1{
     padding: 10px 20px;
 }
 
+body {
+    max-width: 970px !important;
+    margin: 0 auto;
+}
 .cart {
   padding: 20px 50px;
 }
-
 .boxes {
   margin-top: 20px;
 }
@@ -42,17 +37,15 @@ header h1{
   font-size: 120%;
 }
 
-figure {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .product {
   margin-top: 30px;
   margin-left: 20px;
   max-height:300px;
   max-width:100%;
+}
+.figure {
+
 }
 
 .rating-active:before {

@@ -1,6 +1,6 @@
 <template>
   <div>
-  <my-header :cartItemCount='cartItemCount'></my-header>
+  <my-header :cartItemCount="cartItemCount"></my-header>
   <main>
     <div v-for="product in sortedProducts">
       <div class="row">
@@ -35,10 +35,10 @@
       v-for="n in 5" >☆
     </span>
   </div>
-</div>
-</div>
+</div><!-- end of col-md-6-->
+</div><!-- end of row-->
 <hr />
-</div>
+</div><!-- end of v-for-->
 </main>
 </div>
 </template>

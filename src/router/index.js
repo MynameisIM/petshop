@@ -15,7 +15,7 @@ export default new Router({
       props: true,
     },
     {
-      path: '/',
+      path: '/form',
       name: 'Form',
       component: Form,
       props: true,
