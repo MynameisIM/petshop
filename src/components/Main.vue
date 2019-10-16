@@ -52,7 +52,6 @@ export default {
   name: 'imain',
   data() {
     return {
-      products: {},
       cart: []
     };
   },
@@ -97,6 +96,9 @@ export default {
         }
         return productsArray.sort(compare);
       }
+    },
+    products() {
+      return this.$store.getters.products;
     }
   },
   filters: {
@@ -119,10 +121,7 @@ export default {
     }
   },
   created: function() {
-    axios.get('/static/products.json').then(response => {
-      this.products = response.data.products;
-      console.log(this.products);
-    });
+    this.$store.dispatch('initStore');
   }
 };
 </script>
