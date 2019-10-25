@@ -1,9 +1,11 @@
 const state = {
-  products: {}
+  products: {},
+  session: false
 };
 
 const getters = {
-  products: state => state.products
+  products: state => state.products,
+  session: state => state.session
 };
 
 const actions = {
@@ -19,6 +21,9 @@ const actions = {
 const mutations = {
   'SET_STORE' (state, products) {
     state.products = products;
+  },
+  'SET_SESSION' (state, session) {
+    state.session = session;
   }
 };
 
